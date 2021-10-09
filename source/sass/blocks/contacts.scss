@@ -1,0 +1,155 @@
+.contacts {
+  height: 1109px;
+  padding-bottom: 77px;
+}
+
+.contacts__text-top {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 162px;
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: $font-lato;
+    letter-spacing: 0.02em;
+    color: $gold;
+    opacity: 0.87;
+  }
+}
+
+.contacts__title {
+  margin: 0 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 126.64%;
+  font-family: $font-playfairdisplay;
+  letter-spacing: 0.03em;
+  color: $black-text;
+  opacity: 0.87;
+}
+
+// .contacts__wrapper-info {}
+
+.contacts__info {
+  margin: 0;
+  padding: 0 16px;
+  list-style: none;
+}
+
+.contacts__info-item {
+  display: block;
+}
+
+.contacts__item-title {
+  margin: 30px 0 15px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $font-lato;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $black-100;
+  opacity: 0.32;
+}
+
+.contacts__item-text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__item-text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  font-family: $font-lato;
+  color: $black-100;
+
+  &--tel,
+  &--mail {
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+
+.contacts__social {
+  width: 96px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__social-item {
+  display: block;
+}
+
+.contacts__wrapper-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.contacts__svg {
+  fill: $black-24;
+}
+
+.contacts__wrapper-map {
+  padding: 40px 0 0;
+}
+
+.contacts__map {
+  position: relative;
+  width: 100%;
+  height: 359px;
+}
+
+.contacts__question-title {
+  width: 221px;
+  margin: 30px 0 20px 16px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+  font-family: $font-lato;
+  color: $black-100;
+}
+
+.contacts__link {
+  width: 274px;
+  height: 68px;
+  padding-left: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $white;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: $font-lato;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: $black-100;
+  filter: $shadow-button;
+  cursor: pointer;
+
+  &::after {
+    width: 78px;
+    height: 68px;
+    content: "";
+    display: block;
+    background-color: $gold;
+    background-image: url("../img/stack.svg#arrow-button");
+    background-repeat: no-repeat;
+    background-size: 36px auto;
+    background-position: 50%;
+  }
+}
+
+.contacts__form {
+  display: none;
+}

@@ -1,0 +1,320 @@
+.ticket {
+  height: 1265px;
+  padding: 64px 0 64px;
+  background: $white;
+
+  @media (min-width: $tablet-width) {
+    height: 1024px;
+    padding: 44px 0 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 84px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 129px 351px 110px 940px 102px 1fr;
+    grid-template-rows: 19px 79px 92px 37px 454px;
+  }
+}
+
+.ticket__text-top {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 162px;
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: $font-lato;
+    letter-spacing: 0.02em;
+    color: $gold;
+    opacity: 0.87;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+}
+
+.ticket__title {
+  margin: 0 16px 32px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 126.64%;
+  font-family: $font-playfairdisplay;
+  letter-spacing: 0.03em;
+  color: $black-text;
+  opacity: 0.87;
+
+  @media (min-width: $tablet-width) {
+    margin: 50px 0 49px 48px;
+    font-size: 56px;
+    line-height: 110%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 91px;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+}
+
+.ticket__wrapper-text {
+  padding: 0 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 43px 0 67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 2 / 4;
+    grid-row: -2 / -1;
+  }
+}
+
+.ticket__text {
+  margin: 0 0 24px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  font-family: $font-lato;
+  color: $black-text;
+  opacity: 0.87;
+
+  @media (min-width: $tablet-width) {
+    width: 466px;
+    margin: 0 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.ticket__pay {
+  width: 138px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    width: 329px;
+    margin-right: auto;
+  }
+}
+
+.ticket__pay-item {
+  width: 59px;
+  margin: 0 0 24px 0;
+  display: inline-block;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.ticket__pay-img {
+  width: 100%;
+  height: auto;
+}
+
+.ticket__tel {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-family: $font-lato;
+  font-size: 18px;
+  line-height: 150%;
+  background: $gradient-purpur;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+  }
+}
+
+.ticket__table-wrapper {
+  width: 100%;
+  padding: 40px 0 0;
+  display: block;
+  overflow: auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    grid-column: 5 / 6;
+    grid-row: -2 / -1;
+  }
+}
+
+.ticket__table {
+  width: 628px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 736px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 99%;
+    height: 454px;
+  }
+
+  thead th {
+    position: relative;
+    padding: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.5px;
+    font-family: $font-lato;
+    color: $blue-black;
+
+    &:nth-child(1) {
+      width: 109px;
+
+      @media (min-width: $tablet-width) {
+        width: 170px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 90px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 90px;
+      padding-right: 40px;
+    }
+  }
+
+  tbody {
+    @media (min-width: $tablet-width) {
+      background: $white;
+      border: $border-gold;
+      border-radius: 5px;
+    }
+
+    tr {
+      td {
+        text-align: center;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: $font-lato;
+        color: $black-text;
+        opacity: 0.87;
+
+        &:first-child {
+          padding: 16px;
+          text-align: left;
+
+          @media (min-width: $tablet-width) {
+            padding: 16px 0 16px 32px;
+          }
+        }
+
+        @media (min-width: $desktop-width) {
+          padding-right: 40px;
+        }
+      }
+
+      &:last-child {
+        td {
+          padding: 24px 0 0;
+
+          @media (min-width: $tablet-width) {
+            padding: 23px 0;
+          }
+        }
+      }
+
+      &:nth-child(even) {
+        background-color: $gold-10;
+      }
+    }
+  }
+}
+
+.ticket__wrapper-starts {
+  position: absolute;
+  width: 56px;
+  bottom: -21px;
+  left: calc(50% - 56px / 2);
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    margin: 0 auto;
+  }
+
+  &--viewer {
+    .ticket__star {
+      opacity: 0.4;
+
+      &:first-child {
+        opacity: 1;
+      }
+    }
+  }
+
+  &--optium {
+    .ticket__star {
+      opacity: 1;
+
+      &:last-child {
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+.ticket__table-button {
+  width: 120px;
+  height: 49px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  border: $border-gray;
+  border-radius: 2px;
+
+  @media (min-width: $desktop-width) {
+    width: 192px;
+    margin: 0;
+  }
+
+  &.active {
+    background: $gradient-purpur;
+    color: $white;
+  }
+}
