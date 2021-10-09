@@ -91,18 +91,6 @@ const copy = (done) => {
 };
 exports.copy = copy;
 
-const copymodules = (done) => {
-  src([
-    'node_modules/swiper/swiper-bundle.min.js',
-    'node_modules/leaflet/dist/leaflet.{css,js}',
-  ], {
-    base: 'node_modules',
-  })
-    .pipe(dest('build'));
-  done();
-};
-exports.copymodules = copymodules;
-
 const clean = () => del('build');
 
 const server = (done) => {
@@ -139,7 +127,6 @@ const build = series(
     svgstack,
     images,
     createWebp,
-    copymodules,
   ),
 );
 
@@ -154,7 +141,6 @@ exports.default = series(
     scripts,
     svgstack,
     createWebp,
-    copymodules,
   ),
   series(
     server,
