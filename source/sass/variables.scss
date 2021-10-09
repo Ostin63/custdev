@@ -1,37 +1,20 @@
-$tablet-width: 768px;
-$desktop-width: 1695px;
+$modal-width: 320px;
+$tablet-width: 767px;
+$desktop-width: 1439px;
 
 $white: #ffffff;
-$white-16: rgba(#ffffff, 0.16);
-$white-40: rgba(#ffffff, 0.4);
-$white-50: rgba(#ffffff, 0.5);
+$white-ligth: #f9fbff;
 $black: #000000;
-$black-100: #303030;
-$black-16: rgba(48, 48, 48, 0.16);
-$black-24: rgba(0, 0, 0, 0.24);
-$black-90: rgba(48, 48, 48, 0.9);
-$black-text: #1c1515;
-$blue-black: #323c47;
-$gold: #f2c03f;
-$gold-10: rgba(#f2c03f, 0.1);
-$gray: #c4c4c4;
-$special-gray: #f4f4f4;
-$gray-2: #d0d7dd;
-$gray-ligth: #f5f5f5;
-$pink: #fff5f5;
-$purpure: #7664a3;
+$black-lidth: #636363;
+$blue: #2f80ed;
+$blue-10: rgba(#2f37ed, 0.1);
+$blue-30: rgba(#779dff, 0.3);
+$blue-ligth: #cadef9;
+$purpure: #64e2cd;
+$purpure-50: rgba(#64e2cd, 0.5);
 
-$gradient-purpur: linear-gradient(121.1deg, rgba(101, 78, 163, 0.87) 35.26%, rgba(95, 75, 139, 0.87) 88.11%);
+$gradient: radial-gradient(68.31% 68.31% at 50% 50%, $white-ligth 0%, $blue-ligth 100%), $white;
+$shadow-blue-30: 0 10px 50px $blue-30;
+$shadow-blue-10: 0 30px 100px $blue-10;
 
-$border-16: 1px solid $white-16;
-$border-40: 1px solid $white-40;
-$border-black-16: 1px solid $black-16;
-$border-100: 1px solid $black-100;
-$border-gray: 1px solid $gray-2;
-$border-gold: 1px solid $gold;
-
-$shadow-lang: 2px 4px 12px rgba(0, 0, 0, 0.25);
-$shadow-button: drop-shadow(0 5px 12px rgba(49, 40, 70, 0.12));
-
-$font-lato: "Lato", "Arial", sans-serif;
-$font-playfairdisplay: "PlayfairDisplay", "PT Serif", serif;
+$font-montserrat: "montserrat", "Arial", sans-serif;
