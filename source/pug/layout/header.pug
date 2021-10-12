@@ -1,32 +1,39 @@
 header.header
-  .header__wrapper-select-city
-    p.header__select-city САНКТ-ПЕТЕРБУРГ
-    ul.header__list-select-city
-      li.header__item-select-city
-        a.header__link-select-city САНКТ-ПЕТЕРБУРГ
-      li.header__item-select-city
-        a.header__link-select-city МОСКВА
-      li.header__item-select-city
-        a.header__link-select-city МИНСК
-  ul.header__nav
-    li.header__nav-item
-      a.header__nav-link(href="#1") Программа
-    li.header__nav-item
-      a.header__nav-link(href="#1") Отзывы
-    li.header__nav-item
-      a.header__nav-link(href="#1") Стоимость
-    li.header__nav-item
-      a.header__nav-link(href="#1") О преподавателе
-  a.header__button-link(href="#") Запись на курс
-  .header__block-text
-    p Санкт-петербург
-      span 10-21 мая
-    strong Начни делать Customer Development и проверять гипотезы
-    p На оффлайн курсе из 5 воркшопов
-    a.header__button-link(href="#") ЗАПИСАТЬСЯ
-  a.header__test(href="#")
-    p Оценка
-    strong 9 из 10
-    p Иван Матвиенко
-      span Wimprof
-    p Читать отзыв  →
+  .header__top-wrapper
+    .header__wrapper-select-city
+      p.header__select-city САНКТ-ПЕТЕРБУРГ
+      ul.header__list-select-city
+        li.header__item-select-city.header__item-select-city--show-spb.header__item-select-city--selected
+          a.header__link-select-city САНКТ-ПЕТЕРБУРГ
+        li.header__item-select-city.header__item-select-city--show-msk
+          a.header__link-select-city МОСКВА
+        li.header__item-select-city.header__item-select-city--show-mn
+          a.header__link-select-city МИНСК
+    .header__button-menu
+      span.visually-hidden Открыть меню
+    .header__wrapper-nav
+      .header__nav-close
+        span.visually-hidden Закрыть меню
+      ul.header__nav
+        li.header__nav-item
+          a.header__nav-link(href="#1") Программа
+        li.header__nav-item
+          a.header__nav-link(href="#1") Отзывы
+        li.header__nav-item
+          a.header__nav-link(href="#1") Стоимость
+        li.header__nav-item
+          a.header__nav-link(href="#1") О преподавателе
+    a.header__button(href="#") Запись на курс
+  .header__bottom-wrapper
+    .header__block-text
+      p Санкт-петербург 10-21 мая
+      strong Начни делать Customer Development и проверять гипотезы
+      p.header__bottom-text На оффлайн курсе из 5 воркшопов
+      .header__wrapper-button
+        a.header__button-link(href="#") ЗАПИСАТЬСЯ
+    a.header__button-test(href="#")
+      p Оценка
+      strong 9 из 10
+      p Иван Матвиенко
+      b Wimprof
+      p Читать отзыв  →
