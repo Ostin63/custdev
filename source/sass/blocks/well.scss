@@ -1,0 +1,47 @@
+// .well {}
+
+.well__wrapper {
+  h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 124.41%;
+  }
+}
+
+.well__list {
+  margin: 0;
+  padding: 60px 0 0;
+  list-style: none;
+}
+
+// .well__item {}
+
+.well__item-link {
+  display: block;
+
+  h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143.55%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $blue;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 143.55%;
+    color: $black-lidth;
+  }
+}
+
+.well__link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143.55%;
+  text-transform: uppercase;
+  color: $blue;
+  border-bottom: $border-dashed;
+}
