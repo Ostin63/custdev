@@ -15,7 +15,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 290px 25px 215px 110px min-content;
-  grid-template-rows: min-content 44px min-content 40px min-content 15px;
+  grid-template-rows: min-content 44px min-content 40px min-content 16px;
 
   @media (max-width: $desktop-width-min) {
     grid-template-columns: 200px 1fr 280px;
