@@ -13,8 +13,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    background-position: 11% 0;
-    background-size: 1587px 1050px;
+    background-position: 11% 100%;
+    background-size: 1587px 1100px;
   }
 }
 
@@ -29,11 +29,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 98px 46px 132px 70px;
-  }
-
-  @media (max-width: $modal-width) {
-    padding: 112px 46px 127px 70px;
+    padding: 82px 46px 127px 70px;
   }
 
   h2 {
@@ -65,11 +61,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    justify-content: center;
-  }
-
-  @media (max-width: $modal-width) {
     padding: 41px 0 0;
+    justify-content: center;
   }
 }
 

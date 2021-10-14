@@ -14,11 +14,13 @@ $gray: #e5e5e5;
 $blue: #2f80ed;
 $blue-10: rgba(#2f37ed, 0.1);
 $blue-30: rgba(#779dff, 0.3);
+$blue-gradient: #6aaaff;
 $blue-ligth: #cadef9;
 $purpure: #64e2cd;
 $purpure-50: rgba(#64e2cd, 0.5);
 
 $gradient: radial-gradient(68.31% 68.31% at 50% 50%, $white-ligth 0%, $blue-ligth 100%), $white;
+$gradient-blue: radial-gradient(68.31% 68.31% at 50% 50%, $blue-gradient 0%, $blue 100%), $white;
 $shadow-blue-30: 0 10px 50px $blue-30;
 $shadow-blue-10: 0 30px 100px $blue-10;
 
