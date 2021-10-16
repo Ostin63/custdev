@@ -1,0 +1,149 @@
+.reviews {
+  background: url("../img/reviews-bg.png") 45% 0 no-repeat;
+  background-size: 1276px 883px;
+}
+
+.reviews__wrapper {
+  max-width: 1178px;
+  margin: 0 auto;
+  padding: 61px 9px 0 0;
+
+  h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 44px;
+    color: $black;
+  }
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 70px 0 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reviews__item {
+  &:last-child {
+    margin-top: -105px;
+  }
+}
+
+.reviews__item-block {
+  display: block;
+}
+
+.reviews__rard {
+  position: relative;
+  width: 554px;
+  margin-bottom: 20px;
+  padding: 25px 40px 33px 50px;
+  background: $white;
+  border-radius: 10px;
+  box-shadow: $shadow-blue-10;
+
+  &::before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: "";
+    left: 26px;
+    bottom: -15px;
+    border-style: solid;
+    border-width: 15px 9px 0 9px;
+    border-color: $white transparent transparent transparent;
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 182.85%;
+    letter-spacing: 0.05em;
+    color: $black-lidth;
+  }
+
+  p {
+    margin: 10px 0 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    color: $black-lidth;
+  }
+}
+
+.reviews__block-img {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    width: 113px;
+    height: 79px;
+    margin-left: -5px;
+  }
+
+  &--sergey {
+    img {
+      width: 132px;
+      height: 89px;
+      margin-left: -25px;
+    }
+  }
+
+  &--katy {
+    img {
+      width: 134px;
+      height: 131px;
+      margin-top: -15px;
+      margin-left: -30px;
+    }
+  }
+}
+
+.reviews__button-wrapper {
+  width: 276px;
+  height: 276px;
+  margin-top: -240px;
+  margin-left: auto;
+  margin-right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: $gradient-white-10;
+}
+
+.reviews__button {
+  width: 231px;
+  height: 231px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  background: $gradient-white;
+  text-decoration: none;
+  box-shadow: $shadow-blue-30;
+
+  &::before {
+    width: 54px;
+    height: 54px;
+    content: "";
+    margin: 0 auto;
+    display: block;
+    background: url("../img/stack.svg#document") 50% 50% no-repeat;
+    background-size: cover;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 143.55%;
+    text-align: center;
+    color: $blue;
+  }
+}
