@@ -29,7 +29,7 @@
 }
 
 .streams__list {
-  margin-left: -10px;
+  margin: 0 0 -22px -10px;
   padding-top: 61px;
   list-style: none;
   padding-left: 0;
@@ -37,15 +37,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media (max-width: $tablet-width) {
-    margin-left: -5px;
+  @media (max-width: $tablet-width-max) {
+    margin: 0 0 -6px -5px;
     padding-top: 31px;
   }
 }
 
 .streams__item {
-  margin-left: 10px;
-  margin-bottom: 22px;
+  margin: 0 0 22px 10px;
 
   @media (max-width: $tablet-width-max) {
     margin-left: 5px;

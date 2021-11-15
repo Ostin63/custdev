@@ -14,10 +14,12 @@ $black-lidth: #636363;
 $gray: #e5e5e5;
 $blue: #2f80ed;
 $blue-10: rgba(#2f37ed, 0.1);
+$blue-12: rgba(#2f37ed, 0.12);
 $blue-30: rgba(#779dff, 0.3);
 $blue-gradient: #6aaaff;
 $blue-ligth: #cadef9;
 $blue-ligth-10: rgda(#cadef9, 0.1);
+$purpure-button: #52d1bc;
 $purpure: #64e2cd;
 $purpure-50: rgba(#64e2cd, 0.5);
 
@@ -28,6 +30,7 @@ $gradient-white-10: radial-gradient(68.31% 68.31% at 50% 50%, $white 0%, $blue-l
 
 $shadow-blue-30: 0 10px 50px $blue-30;
 $shadow-blue-10: 0 30px 100px $blue-10;
+$shadow-blue-12: 0 20px 50px $blue-12;
 
 $border-dashed: 1px dashed $blue;
 
