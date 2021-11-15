@@ -29,23 +29,26 @@
 }
 
 .streams__list {
+  margin-left: -10px;
   padding-top: 61px;
   list-style: none;
-  margin: 0;
   padding-left: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   @media (max-width: $tablet-width) {
+    margin-left: -5px;
     padding-top: 31px;
   }
 }
 
 .streams__item {
+  margin-left: 10px;
   margin-bottom: 22px;
 
   @media (max-width: $tablet-width-max) {
+    margin-left: 5px;
     margin-bottom: 6px;
   }
 
