@@ -5,7 +5,7 @@
     url("../img/big-circle.png"),
     url("../img/small-circle-left.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%, 100% -20%, 0 110%;
+  background-position: 55% 53%, 100% -20%, 0 108%;
 
   @media (max-width: $tablet-width-max) {
     padding: 76px 0 50px;
@@ -17,6 +17,7 @@
   }
 
   @media (max-width: $tablet-width) {
+    padding: 62px 0 50px;
     background-image: url("../img/price-bg-768.png");
     background-repeat: no-repeat;
     background-position: 50% 30%;
@@ -40,9 +41,9 @@
 }
 
 .price__list {
-  max-width: 897px;
+  max-width: 900px;
   margin: 0 auto;
-  padding-top: 57px;
+  padding-top: 63px;
   padding-left: 0;
   list-style: none;
   display: flex;
@@ -56,6 +57,7 @@
   @media (max-width: $tablet-width) {
     display: block;
     margin: 0 auto;
+    padding-top: 42px;
   }
 }
 
@@ -68,22 +70,22 @@
     line-height: 40px;
     color: $blue;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $tablet-width-max) {
       font-size: 20px;
       line-height: 32px;
     }
   }
 
   p {
-    margin: 12px 0 33px;
+    margin: 6px 0 42px;
     text-align: center;
     font-weight: 600;
     font-size: 16px;
     line-height: 158.47%;
     color: $blue;
 
-    @media (max-width: $tablet-width) {
-      font-size: 16px;
+    @media (max-width: $tablet-width-max) {
+      margin-top: 15px;
     }
   }
 }
@@ -113,17 +115,18 @@
   width: 271px;
   position: relative;
   margin-bottom: 43px;
-  padding: 70px 0 64px;
+  padding: 67px 0 64px;
   background: $white;
   box-shadow: $shadow-blue-12;
   border-radius: 10px;
 
   @media (max-width: $tablet-width-max) {
     width: 280px;
+    margin-bottom: 30px;
   }
 
   @media (max-width: $tablet-width) {
-    margin: 0 auto 10px;
+    margin: 0 auto 8px;
   }
 
   &--active {
@@ -132,8 +135,8 @@
       width: 90px;
       height: 90px;
       content: "";
-      top: -45px;
-      right: -23px;
+      top: -44px;
+      right: -25px;
       background: url("../img/price-act.png") 50% 50% no-repeat;
 
       @media (max-width: $tablet-width-max) {
@@ -156,16 +159,16 @@
   &:last-child {
     width: 570px;
     margin: 0 auto;
-    padding: 46px 85px 39px 82px;
+    padding: 41px 85px 48px 82px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     p {
-      margin: 11px 0 0;
+      margin: 6px 0 0;
 
       @media (max-width: $tablet-width-max) {
-        margin: 12px 0 33px;
+        margin: 15px 0 42px;
       }
     }
 
@@ -182,7 +185,7 @@
       display: block;
       margin: 0;
       margin-bottom: 43px;
-      padding: 70px 0 64px;
+      padding: 67px 0 64px;
     }
 
     @media (max-width: $tablet-width) {

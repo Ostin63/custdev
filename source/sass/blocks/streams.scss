@@ -39,6 +39,11 @@
 
   @media (max-width: $tablet-width-max) {
     margin: 0 0 -6px -5px;
+    padding-top: 61px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 -6px -5px;
     padding-top: 31px;
   }
 }
