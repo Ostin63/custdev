@@ -1,12 +1,13 @@
 .streams {
-  margin: 110px auto 0;
+  margin: 0 auto;
+  padding: 95px 0 0;
 
   @media (max-width: $tablet-width-max) {
-    margin: 1px auto 0;
+    padding: 76px 0 0;
   }
 
   @media (max-width: $tablet-width) {
-    margin: 65px auto 0;
+    padding: 41px 0 0;
   }
 
   h2 {

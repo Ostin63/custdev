@@ -12,10 +12,15 @@ $white-ligth: #f9fbff;
 $black: #000000;
 $black-lidth: #636363;
 $gray: #e5e5e5;
+$gray-black: #c6c6c6;
 $blue: #2f80ed;
+$blue-special: #185fbf;
 $blue-10: rgba(#2f37ed, 0.1);
 $blue-12: rgba(#2f37ed, 0.12);
 $blue-30: rgba(#779dff, 0.3);
+$blue-3: rgba(#2f80ed, 0.3);
+$blue-5: rgba(#2f80ed, 0.05);
+$blue-50: rgba(#2f80ed, 0.5);
 $blue-gradient: #6aaaff;
 $blue-ligth: #cadef9;
 $blue-ligth-10: rgda(#cadef9, 0.1);
@@ -23,15 +28,20 @@ $purpure-button: #52d1bc;
 $purpure: #64e2cd;
 $purpure-50: rgba(#64e2cd, 0.5);
 
-$gradient: radial-gradient(68.31% 68.31% at 50% 50%, $white-ligth 0%, $blue-ligth 100%), $white;
-$gradient-blue: radial-gradient(68.31% 68.31% at 50% 50%, $blue-gradient 0%, $blue 100%), $white;
-$gradient-white: radial-gradient(68.31% 68.31% at 50% 50%, $white 0%, $blue-ligth 100%), $white;
-$gradient-white-10: radial-gradient(68.31% 68.31% at 50% 50%, $white 0%, $blue-ligth-10 100%), $white-10;
+$gradient: radial-gradient(68.31% 68.31% at 50% 50%, $white-ligth 0%, $blue-ligth 100%),
+$white;
+$gradient-blue: radial-gradient(68.31% 68.31% at 50% 50%, $blue-gradient 0%, $blue 100%),
+$white;
+$gradient-white: radial-gradient(68.31% 68.31% at 50% 50%, $white 0%, $blue-ligth 100%),
+$white;
+$gradient-white-10: radial-gradient(68.31% 68.31% at 50% 50%, $white 0%, $blue-ligth-10 100%),
+$white-10;
 
 $shadow-blue-30: 0 10px 50px $blue-30;
 $shadow-blue-10: 0 30px 100px $blue-10;
 $shadow-blue-12: 0 20px 50px $blue-12;
 
 $border-dashed: 1px dashed $blue;
+$border-solid: 1px solid $blue-3;
 
 $font-montserrat: "montserrat", "Arial", sans-serif;

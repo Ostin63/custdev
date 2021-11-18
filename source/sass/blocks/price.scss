@@ -8,7 +8,7 @@
   background-position: 55% 53%, 100% -20%, 0 108%;
 
   @media (max-width: $tablet-width-max) {
-    padding: 76px 0 50px;
+    padding: 76px 0 17px;
     background-image:
       url("../img/price-bg-768.png"),
       url("../img/small-circle.png");
@@ -17,7 +17,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 62px 0 50px;
+    padding: 62px 0 35px;
     background-image: url("../img/price-bg-768.png");
     background-repeat: no-repeat;
     background-position: 50% 30%;
@@ -184,7 +184,7 @@
       width: 280px;
       display: block;
       margin: 0;
-      margin-bottom: 43px;
+      margin-bottom: 30px;
       padding: 67px 0 64px;
     }
 

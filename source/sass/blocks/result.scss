@@ -100,10 +100,7 @@
     min-height: 400px;
     flex-direction: column;
     justify-content: flex-start;
-  }
-
-  @media (max-width: $tablet-width) {
-    padding: 56px 42px 63px 59px;
+    padding: 56px 42px 58px 59px;
   }
 
   &::before {

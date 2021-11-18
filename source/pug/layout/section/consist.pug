@@ -1,16 +1,36 @@
 section.consist
-h2 В стоимость входит
-  ul.consist__list
-    li.consist__item
-      h3 3 методички
-      p методичка по проведению Customer Development и по настройке процессов проверки гипотез
-    li.consist__item
-      h3 3 месяца подписки
-      p можно прочитать книгу (бумажный тираж закончился)
-    li.consist__item
-      .consist__video-block
-        img(src="img/video-big.jpg", width="295", height="166" alt="")
-      p Видеозапись курса
-    li.consist__item
-      h3 Бессмертный чат
-      p Вы познакомитесь с большим количеством интересных продактов и сможете общаться и после курса, общий чат в Telegram останется с вами надолго
+  .consist__wrapper
+    h2 В стоимость входит
+    ul.consist__list
+      li.consist__item
+        .consist__wrapper-item.consist__wrapper-item--book
+          h3 3 методички
+          p методичка по проведению Customer Development и по настройке процессов проверки гипотез
+      li.consist__item
+        .consist__wrapper-item.consist__wrapper-item--subs
+          h3 3 месяца подписки&emsp;
+            span на BOOKMATE
+          p можно прочитать книгу (бумажный тираж закончился)
+      li.consist__item
+        .consist__wrapper-item.consist__wrapper-item--video
+          .consist__video-wrapper
+            .consist__video-block
+              picture
+                source(media="(min-width: 1023px)", srcset="img/video-consist.jpg")
+                img(src="img/video-768-consist.jpg", width="179", height="166" alt="")
+            a.consist__video-play(href="#")
+              span.visually-hidden Play
+          h3 Видеозапись курса
+      li.consist__item
+        .consist__wrapper-item.consist__wrapper-item--chat
+          h3 Бессмертный чат
+          p Вы познакомитесь с большим количеством интересных продактов и сможете общаться и после курса, общий чат в Telegram останется с вами надолго
+  form.consist__form(action="", method="post")
+    .consist__wrapper-input
+      label(for="fulname")
+        input#fulname(type="text", name="fulname" placeholder="Имя", required)
+      label(for="phone")
+        input#fulname(type="tel", name="phone" placeholder="Телефон", required)
+      label(for="email")
+        input#email(type="email", name="email" placeholder="E-mail", required)
+      button(type="submit") Записаться на курс
