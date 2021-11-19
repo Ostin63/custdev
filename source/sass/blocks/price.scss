@@ -106,6 +106,15 @@
   background: $purpure-button;
   border-radius: 50px;
 
+  &:hover,
+  &:focus {
+    background: $purpure-hover;
+  }
+
+  &:active {
+    background: $purpure-active;
+  }
+
   @media (max-width: $tablet-width) {
     width: 196px;
   }

@@ -94,7 +94,7 @@
 }
 
 .header__link-select-city {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 14px;
   line-height: 119.62%;
   color: $white;
@@ -102,6 +102,7 @@
 
 .header__item-select-city {
   margin-right: 26px;
+  cursor: pointer;
 
   &:nth-child(3n+3) {
     margin-right: 0;
@@ -139,6 +140,12 @@
       .header__link-select-city {
         color: $blue;
       }
+    }
+  }
+
+  &--selected {
+    .header__link-select-city {
+      font-weight: bold;
     }
   }
 
@@ -289,6 +296,10 @@
     opacity: 0.7;
   }
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (max-width: $desktop-width-min) {
     margin: 30px 192px 0 0;
     color: $white;
@@ -426,6 +437,15 @@
   color: $white;
   background: $purpure;
   border-radius: 50px;
+
+  &:hover,
+  &:focus {
+    background: $purpure-hover;
+  }
+
+  &:active {
+    background: $purpure-active;
+  }
 }
 
 .header__button-test {
