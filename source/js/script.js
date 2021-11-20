@@ -6,8 +6,9 @@ const headerListSelectCity = body.querySelector('.header__list-select-city');
 const buttonSelectCities = body.querySelectorAll('.header__item-select-city');
 const headerLinkSelect = body.querySelectorAll('.header__link-select-city');
 const headerButtonMenu = document.querySelector('.header__button-menu');
-const headeNav = body.querySelector('.header__wrapper-nav');
-const headerNavClose = body.querySelector('.header__nav-close');
+const headerNav = body.querySelector('.header__wrapper-nav');
+const headerNavClose = headerNav.querySelector('.header__nav-close');
+const headerNavButtons = headerNav.querySelectorAll('.header__nav-item');
 const modalForm = body.querySelector('.consist__form');
 const dataSabmitUrl = 'https://echo.htmlacademy.ru/';
 
@@ -85,11 +86,11 @@ const switchCities = (buttons, element, items) => {
 };
 
 const onAddMenu = () => {
-  headeNav.classList.add('header__wrapper-nav--active');
+  headerNav.classList.add('header__wrapper-nav--active');
 };
 
 const onRemoveMenu = () => {
-  headeNav.classList.remove('header__wrapper-nav--active');
+  headerNav.classList.remove('header__wrapper-nav--active');
 };
 
 const sendData = (url, bodyForm, alertSucces, error) => {
@@ -117,6 +118,9 @@ const onFormSend = (evt) => {
   sendData(dataSabmitUrl, formData, alertSuccess, alertError);
 };
 
+for (const button of headerNavButtons) {
+  button.addEventListener('click', onRemoveMenu);
+}
 modalForm.addEventListener('submit', onFormSend);
 headerButtonMenu.addEventListener('click', onAddMenu);
 headerNavClose.addEventListener('click', onRemoveMenu);
