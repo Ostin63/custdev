@@ -5,10 +5,12 @@ const headerSelectCity = body.querySelector('.header__select-city');
 const headerListSelectCity = body.querySelector('.header__list-select-city');
 const buttonSelectCities = body.querySelectorAll('.header__item-select-city');
 const headerLinkSelect = body.querySelectorAll('.header__link-select-city');
-const headerButtonMenu = document.querySelector('.header__button-menu');
+const dataCity = body.querySelector('.header__block-text p');
+const headerButtonMenu = body.querySelector('.header__button-menu');
 const headerNav = body.querySelector('.header__wrapper-nav');
 const headerNavClose = headerNav.querySelector('.header__nav-close');
 const headerNavButtons = headerNav.querySelectorAll('.header__nav-item');
+const footerSelectCityButtons = body.querySelectorAll('.footer__item-select-city');
 const modalForm = body.querySelector('.consist__form');
 const dataSabmitUrl = 'https://echo.htmlacademy.ru/';
 
@@ -22,6 +24,12 @@ const errorLoading = getTemplateContent(body, 'alert__error-loading');
 
 const successElement = success.cloneNode(true);
 const successErrorLoading = errorLoading.cloneNode(true);
+
+const cityData = [
+  ' 10-21 мая',
+  ' 20-31 июня',
+  ' 10-21 августа',
+];
 
 const keys = {
   escape: 'Escape',
@@ -56,7 +64,8 @@ const onErrorEscRemove = () => {
 
 const alertSuccess = () => {
   body.append(successElement);
-  document.addEventListener('click', onSuccessRemove); document.addEventListener('keydown', onElementEscRemove);
+  document.addEventListener('click', onSuccessRemove);
+  document.addEventListener('keydown', onElementEscRemove);
 };
 
 const alertError = () => {
@@ -70,20 +79,42 @@ const onClickSelectedMenu = () => {
   headerListSelectCity.classList.toggle('header__list-select-city--active');
 };
 
-const switchCities = (buttons, element, items) => {
+function switchCities(buttons, footerButtons, element, items, city, when) {
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', () => {
 
       for (let i = 0; i < buttons.length; i++) {
         buttons[i].classList.remove('header__item-select-city--selected');
+        footerButtons[i].classList.remove('footer__item-select-city--active');
       }
 
       buttons[i].classList.add('header__item-select-city--selected');
+      footerButtons[i].classList.add('footer__item-select-city--active');
       element.textContent = items[i].textContent;
+      city.textContent = items[i].textContent + when[i];
       onClickSelectedMenu();
     });
   }
-};
+}
+
+function switchCitiesFooter(buttons, footerButtons, element, items, city, when) {
+  for (let i = 0; i < buttons.length; i++) {
+    footerButtons[i].addEventListener('click', () => {
+
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('header__item-select-city--selected');
+        footerButtons[i].classList.remove('footer__item-select-city--active');
+      }
+
+      buttons[i].classList.add('header__item-select-city--selected');
+      footerButtons[i].classList.add('footer__item-select-city--active');
+      element.textContent = items[i].textContent;
+      city.textContent = items[i].textContent + when[i];
+      headerListSelectCity.classList.remove('header__list-select-city--active');
+      headerSelectCity.classList.remove('header__select-city--active');
+    });
+  }
+}
 
 const onAddMenu = () => {
   headerNav.classList.add('header__wrapper-nav--active');
@@ -125,4 +156,5 @@ modalForm.addEventListener('submit', onFormSend);
 headerButtonMenu.addEventListener('click', onAddMenu);
 headerNavClose.addEventListener('click', onRemoveMenu);
 headerSelectCity.addEventListener('click', onClickSelectedMenu);
-switchCities(buttonSelectCities, headerSelectCity, headerLinkSelect);
+switchCities(buttonSelectCities, footerSelectCityButtons, headerSelectCity, headerLinkSelect, dataCity, cityData);
+switchCitiesFooter(buttonSelectCities, footerSelectCityButtons, headerSelectCity, headerLinkSelect, dataCity, cityData);

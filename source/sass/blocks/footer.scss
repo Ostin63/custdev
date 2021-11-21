@@ -30,6 +30,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
