@@ -1,7 +1,6 @@
 .consist {
   position: relative;
-  background-image:
-    url("../img/consist-bg.png");
+  background-image: url("../img/consist-bg.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 
@@ -30,16 +29,14 @@
   }
 
   @media (max-width: $tablet-width-max) {
-    background-image:
-      url("../img/consist-bg-768.png");
+    background-image: url("../img/consist-bg-768.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% 1295px;
   }
 
   @media (max-width: $tablet-width) {
-    background-image:
-      url("../img/consist-bg-320.png");
+    background-image: url("../img/consist-bg-320.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% 1295px;

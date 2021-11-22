@@ -31,14 +31,10 @@ $purpure: #64e2cd;
 $purpure-50: rgba(#64e2cd, 0.5);
 $bg-95: rgba(#ebebeb, 0.95);
 
-$gradient: radial-gradient(68.31% 68.31% at 50% 50%, $white-ligth 0%, $blue-ligth 100%),
-$white;
-$gradient-blue: radial-gradient(68.31% 68.31% at 50% 50%, $blue-gradient 0%, $blue 100%),
-$white;
-$gradient-white: radial-gradient(68.31% 68.31% at 50% 50%, $white 0%, $blue-ligth 100%),
-$white;
-$gradient-white-10: radial-gradient(68.31% 68.31% at 50% 50%, $white 0%, $blue-ligth-10 100%),
-$white-10;
+$gradient: radial-gradient(68.31% 68.31% at 50% 50%, $white-ligth 0%, $blue-ligth 100%);
+$gradient-blue: radial-gradient(68.31% 68.31% at 50% 50%, $blue-gradient 0%, $blue 100%);
+$gradient-white: radial-gradient(68.31% 68.31% at 50% 50%, $white 0%, $blue-ligth 100%);
+$gradient-white-10: radial-gradient(68.31% 68.31% at 50% 50%, $white 0%, $blue-ligth-10 100%);
 
 $shadow-blue-30: 0 10px 50px $blue-30;
 $shadow-blue-10: 0 30px 100px $blue-10;
