@@ -296,7 +296,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 107px 0 94px;
+    padding: 107px 20px 94px;
   }
 }
 
@@ -312,7 +312,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 280px;
+    max-width: 100%;
     margin: 0 auto;
     flex-direction: column;
   }
@@ -339,6 +339,7 @@
     }
 
     @media (max-width: $tablet-width) {
+      width: 100%;
       margin: 0 0 20px;
     }
   }
@@ -362,7 +363,8 @@
     }
 
     @media (max-width: $tablet-width) {
-      margin: 20px 0 0;
+      width: 100%;
+      margin: 20px auto 0;
     }
 
     &:hover,
