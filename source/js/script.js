@@ -5,7 +5,7 @@ const headerSelectCity = body.querySelector('.header__select-city');
 const headerListSelectCity = body.querySelector('.header__list-select-city');
 const buttonSelectCities = body.querySelectorAll('.header__item-select-city');
 const headerLinkSelect = body.querySelectorAll('.header__link-select-city');
-const dataCity = body.querySelector('.header__block-text p');
+const city = body.querySelector('.header__block-text p');
 const headerButtonMenu = body.querySelector('.header__button-menu');
 const headerNav = body.querySelector('.header__wrapper-nav');
 const headerNavClose = headerNav.querySelector('.header__nav-close');
@@ -25,7 +25,7 @@ const errorLoading = getTemplateContent(body, 'alert__error-loading');
 const successElement = success.cloneNode(true);
 const successErrorLoading = errorLoading.cloneNode(true);
 
-const cityData = [
+const timeInCity = [
   ' 10-21 мая',
   ' 20-31 июня',
   ' 10-21 августа',
@@ -156,5 +156,5 @@ modalForm.addEventListener('submit', onFormSend);
 headerButtonMenu.addEventListener('click', onAddMenu);
 headerNavClose.addEventListener('click', onRemoveMenu);
 headerSelectCity.addEventListener('click', onClickSelectedMenu);
-switchCities(buttonSelectCities, footerSelectCityButtons, headerSelectCity, headerLinkSelect, dataCity, cityData);
-switchCitiesFooter(buttonSelectCities, footerSelectCityButtons, headerSelectCity, headerLinkSelect, dataCity, cityData);
+switchCities(buttonSelectCities, footerSelectCityButtons, headerSelectCity, headerLinkSelect, city, timeInCity);
+switchCitiesFooter(buttonSelectCities, footerSelectCityButtons, headerSelectCity, headerLinkSelect, city, timeInCity);
